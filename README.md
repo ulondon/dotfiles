@@ -25,3 +25,6 @@ Checkout:
 ```bash
 dotfiles checkout
 ```
+
+### More details
+https://www.atlassian.com/git/tutorials/dotfiles
