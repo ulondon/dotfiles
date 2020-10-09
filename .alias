@@ -12,3 +12,4 @@ a screenshot='flameshot gui'
 # a bakwd='cp $@ /mnt/ts2t/wd500.bak/$WD_BAK_DEST -rv' 
 a bakwd='bakwd() {~/bin/cpWd5.sh $@}; bakwd'
 a jstart='jupyter-notebook --no-browser'
+a dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"

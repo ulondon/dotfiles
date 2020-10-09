@@ -15,7 +15,7 @@
 
 function! LF()
     let temp = tempname()
-    exec 'silent !~/bin/lf -selection-path=' . shellescape(temp)
+    exec 'silent !/usr/bin/lf -selection-path=' . shellescape(temp)
     if !filereadable(temp)
         redraw!
         return
