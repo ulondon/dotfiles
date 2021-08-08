@@ -27,7 +27,7 @@ vnoremap . :norm.<CR>
 " Leader shortcuts
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
-nnoremap <leader>a :Ack
+" nnoremap <leader>a :Ack
 nnoremap <leader>ft Vatzf
 nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
 nnoremap <leader>q gqip
@@ -65,3 +65,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" copy
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+noremap <Leader>u 0vg_"+y
+noremap <Leader>v "_dEP
+noremap <Leader>x "_d
