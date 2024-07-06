@@ -16,3 +16,4 @@ a jstart='jupyter-notebook --no-browser'
 a jstop='~/bin/jstop.sh'
 a dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 a tree="tree -h --du"
+a tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"

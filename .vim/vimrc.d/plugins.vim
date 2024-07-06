@@ -10,9 +10,12 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'jceb/vim-orgmode'
+" Plugin 'jceb/vim-orgmode'
 Plugin 'vimwiki/vimwiki'
 Plugin 'codcodog/simplebuffer.vim'
+" webdev
+Plugin 'tpope/vim-surround'
+Plugin 'mattn/emmet-vim'
 " colors
 Plugin 'vim-scripts/obsidian2.vim'
 Plugin 'jacoborus/tender.vim'
