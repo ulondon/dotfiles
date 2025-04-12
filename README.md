@@ -28,3 +28,8 @@ dotfiles checkout
 
 ### More details
 https://www.atlassian.com/git/tutorials/dotfiles
+
+# Todo
+- add stow instructions
+- add tmux-battery as submodule
+- add session-exmaple file that tmux.conf sources
