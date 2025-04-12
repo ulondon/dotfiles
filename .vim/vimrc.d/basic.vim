@@ -8,10 +8,14 @@ set guifont=Menlo:h14
 set nocompatible
 "set modelines=0
 "set tabstop=4
+set autochdir
+autocmd BufRead,BufNewFile *.m set ff=dos
 
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+autocmd FileType matlab setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 
 "set encoding=utf-8
 "set scrolloff=3

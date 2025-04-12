@@ -3,6 +3,7 @@
 " Basics
 
 inoremap jk <ESC>
+tnoremap jk <C-\><C-n>
 let mapleader = "\<Space>"
 
 " Arrows are unvimlike 
@@ -61,10 +62,13 @@ nmap ,cl :let @"=expand("%:p")<CR>
 
 " Control shortcuts
 
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+"nnoremap <C-h> <C-w>h
+"nnoremap <C-j> <C-w>j
+"nnoremap <C-k> <C-w>k
+"nnoremap <C-l> <C-w>l
+nnoremap <C-h> :tabprev<CR>
+nnoremap <C-l> :tabnext<CR>
+nnoremap <C-n> :tabnew<CR>
 
 " copy
 noremap <Leader>y "+y

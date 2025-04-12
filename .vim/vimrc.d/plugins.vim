@@ -12,21 +12,29 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
 " Plugin 'jceb/vim-orgmode'
 Plugin 'vimwiki/vimwiki'
+" Plugin 'gabrielelana/vim-markdown'
+Plugin 'godlygeek/tabular'
 Plugin 'codcodog/simplebuffer.vim'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 " webdev
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
-" colors
-Plugin 'vim-scripts/obsidian2.vim'
-Plugin 'jacoborus/tender.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'rakr/vim-one'
+
+" colors  https://vimcolorschemes.com/
+Plugin 'rafi/awesome-vim-colorschemes'
 call vundle#end()
 
 filetype plugin indent on
 
 let g:airline_skip_empty_sections = 1
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " vimwiki
-let g:vimwiki_list = [{'path': '~/org/vimwiki/main.wiki', 'path_html': '~/org/vimwiki/html'}]
+" let g:vimwiki_list = [{'path': '~/org/vimwiki/main.wiki', 'path_html': '~/org/vimwiki/html'}]
+
+" fzf
+command! -bang Proj call fzf#vim#files('~/projects', <bang>0)
