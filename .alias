@@ -5,7 +5,7 @@ a ls='ls --color=auto'
 a l='ls -lh'
 a g='grep -i --color=always'
 a gp='grep -P --color=always'
-a -- -='less -i'
+a -- -='less -ir'
 a mdcd='mdcd() { mkdir $1; cd $1}; mdcd'
 a shmod='stat --format "%a"'
 a du1='du -h -d 1'
@@ -17,3 +17,7 @@ a jstop='~/bin/jstop.sh'
 a dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 a tree="tree -h --du"
 a tlmgr="/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode"
+a diffy="diff -yEZ -W $(tput cols) --strip-trailing-cr --color=always"
+a gch="grep -inr --color=always  --include \*.h --include \*.c --include \*.hpp --include \*.cpp --include \*.ti"
+a gpy="grep -inr --color=always  --include \*.py"
+a ped="perl -pe"
