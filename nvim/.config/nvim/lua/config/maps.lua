@@ -6,3 +6,5 @@ vim.keymap.set('i', 'jk', '<esc>')
 vim.keymap.set('n', '<C-h>', vim.cmd.tabprev)
 vim.keymap.set('n', '<C-l>', vim.cmd.tabnext)
 vim.keymap.set('n', '<C-n>', vim.cmd.tabnew)
+
+require('config.lf_map')
